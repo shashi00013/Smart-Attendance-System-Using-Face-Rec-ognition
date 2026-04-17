@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mark Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Real‑Time Attendance Marking</h2>
+        <p>Position your face in front of the webcam and press <strong>'s'</strong> to mark attendance when your face is detected. Press <strong>'q'</strong> to cancel.</p>
+        <form method="post">
+            <button type="submit">Start Camera & Mark Attendance</button>
+        </form>
+        <a href="/admin">Back to Dashboard</a>
+    </div>
+</body>
+</html>

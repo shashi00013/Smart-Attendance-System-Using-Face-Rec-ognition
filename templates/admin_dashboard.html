@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <div class="actions">
+            <a href="/add_student" class="btn">➕ Add Student</a>
+            <a href="/take_attendance" class="btn">📷 Mark Attendance</a>
+            <a href="/view_reports" class="btn">📊 View Reports</a>
+            <a href="/" class="btn">🏠 Home</a>
+        </div>
+        <h3>Registered Students</h3>
+        <table>
+            <tr><th>ID</th><th>Name</th><th>Roll Number</th><th>Course</th></tr>
+            {% for s in students %}
+            <tr><td>{{ s[0] }}</td><td>{{ s[1] }}</td><td>{{ s[2] }}</td><td>{{ s[3] }}</td></tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
