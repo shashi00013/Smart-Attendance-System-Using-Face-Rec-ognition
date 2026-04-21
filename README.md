@@ -176,8 +176,4 @@ Flask – lightweight web framework
 SQLite – embedded database
 
 ⭐ If this project helped you, please give it a star on GitHub!
-
-text
-
-You can copy this entire markdown into your `README.md` file. Replace the placeholder screenshot URLs with actual images after you run the system and take screenshots.
    
